@@ -36,7 +36,7 @@ jobs:
           $uniqueTag = $env:GITHUB_SHA
           $Actor = $env:GITHUB_ACTOR 
           $Repository = $Actor.tolower()
-          $ImageFullPath = "ghcr.io/$Repository/santatechwishlist"
+          $ImageFullPath = "ghcr.io/$Repository/mywebapp"
           $UniqueImageDest = "$($ImageFullPath):$($uniqueTag)"
           $LatestImageDest = "$($ImageFullPath):latest"
           
@@ -47,7 +47,7 @@ jobs:
           echo "UniqueImageDest: $UniqueImageDest"
           echo "LatestImageDest: $LatestImageDest"
           
-          cd source/
+          # cd source/
         
           # new login with new container registry url and PAT
           echo ${{ secrets.GH_PACKAGE_PAT }} | docker login ghcr.io -u $env:GITHUB_ACTOR --password-stdin
