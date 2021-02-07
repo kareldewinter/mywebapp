@@ -41,5 +41,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/$GITHUB_ACTOR/app:latest
-            ghcr.io/$GITHUB_ACTOR/app:1.0.0
+            ghcr.io/kareldewinter/app:latest
+            ghcr.io/kareldewinter/app:1.0.0
