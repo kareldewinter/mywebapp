@@ -41,5 +41,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/kareldewinter/mywebapp:latest
-            ghcr.io/kareldewinter/mywebapp:v0.1
+            ghcr.io/kareldewinter/mywebappimage:latest
+            ghcr.io/kareldewinter/mywebappimage:v0.1
