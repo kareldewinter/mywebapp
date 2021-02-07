@@ -1,4 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
+
+LABEL authors="Karel De Winter"
+
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
